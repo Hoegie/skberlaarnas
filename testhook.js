@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var join = require('path').join;
 var http = require('http');
 var path = require('path');
+var execFile = require('child_process').execFile;
 /*
 var connection = mysql.createConnection({
   host     : '109.135.3.222',
@@ -36,6 +37,13 @@ app.post("/",function(req,res){
 
   res.end(JSON.stringify("webhook successfull"));
   console.log("webhook successfull !!");
+
+  execFile('/volume1/web/nodeprojects/gitHub/skberlaarnas/skberlaarhook.sh', function(error, stdout, stderr) {
+                    // Log success in some manner
+                    console.log( 'exec complete' );
+            });
+
+  
 });
 
 
