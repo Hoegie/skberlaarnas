@@ -34,8 +34,8 @@ var app = express();
 
 app.get("/alarms/general",function(req,res){
 
-  res.end(JSON.stringify("test webhook3 gelukt"));
-  console.log("test webhook3 geslaagd !");
+  res.end(JSON.stringify("test webhook4 gelukt"));
+  console.log("test webhook4 geslaagd !");
 });
 
 
