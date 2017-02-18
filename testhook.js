@@ -38,7 +38,7 @@ app.post("/",function(req,res){
   res.end(JSON.stringify("webhook successfull"));
   console.log("webhook successfull !!");
 
-  execFile('/volume1/web/nodeprojects/gitHub/skberlaarnas/skberlaarhook.sh', function(error, stdout, stderr) {
+  exec('sh skberlaarhook.sh', function(error, stdout, stderr) {
                     // Log success in some manner
                     console.log( 'exec complete' );
             });
