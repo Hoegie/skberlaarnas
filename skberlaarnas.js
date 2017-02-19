@@ -7,7 +7,7 @@ var join = require('path').join;
 var http = require('http');
 var path = require('path');
 /*
-version 7
+version 8
 var connection = mysql.createConnection({
   host     : '109.135.3.222',
   //host     : '192.168.69.190',
@@ -35,8 +35,8 @@ var app = express();
 
 app.get("/alarms/general",function(req,res){
 
-  res.end(JSON.stringify("test webhook finally 7e keer gelukt"));
-  console.log("test webhook finally 7e keer geslaagd !");
+  res.end(JSON.stringify("test webhook finally 8e keer gelukt"));
+  console.log("test webhook finally 8e keer geslaagd !");
 });
 
 
